@@ -1,0 +1,25 @@
+apiVersion: v1
+entries:
+  dftbackend:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-08-25T12:22:35.226517+05:30"
+    description: A Helm chart for Kubernetes
+    digest: 27ed089708a87de306fce95516de3f57dd91c5882fa0999de54bba907d5ceb5c
+    name: dftbackend
+    type: application
+    urls:
+    - https://catenax.github.io/gds-productdft-helm/dftbackend-1.0.0.tgz
+    version: 1.0.0
+  dftfrontend:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-08-25T12:22:35.226908+05:30"
+    description: A Helm chart for Kubernetes
+    digest: 907c6d623ed91fbc4ec0d69477173863d33d9bbcd4fe7aa7f80ad31e94c8ac4c
+    name: dftfrontend
+    type: application
+    urls:
+    - https://catenax.github.io/gds-productdft-helm/dftfrontend-1.0.0.tgz
+    version: 1.0.0
+generated: "2022-08-25T12:22:35.225884+05:30"
