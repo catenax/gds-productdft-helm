@@ -2,6 +2,8 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: {{ include "omejdn-server.fullname" . }}
+  labels:
+    app: postgres
 spec:
   storageClassName: {{ .Values.persistence.storageClass }}
   accessModes:

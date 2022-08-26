@@ -3,7 +3,7 @@ entries:
   dftbackend:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-08-26T18:27:33.741316+05:30"
+    created: "2022-08-26T18:40:36.797819+05:30"
     description: A Helm chart for Kubernetes
     digest: a827fba4a9876748085452b6ccd4b1dce9d1b98587f9cac5a152aac058d062db
     name: dftbackend
@@ -14,7 +14,7 @@ entries:
   dftfrontend:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-08-26T18:27:33.741519+05:30"
+    created: "2022-08-26T18:40:36.798193+05:30"
     description: A Helm chart for Kubernetes
     digest: 21b5b988563c92398b88d70a86a85b28a53cf58a7ebc8cfe989ab7676c9cb472
     name: dftfrontend
@@ -25,12 +25,12 @@ entries:
   omejdn-server:
   - apiVersion: v2
     appVersion: 1.7.1
-    created: "2022-08-26T18:27:33.7422+05:30"
+    created: "2022-08-26T18:40:36.802275+05:30"
     description: DAPS server helm-chart
-    digest: f8df66a441b57514da4a4e3c79f50f982e29a484772ccbc19ac9eb3007ff78d9
+    digest: 3beaab1a2693977bdedc66203e9afb1db15d5c6ff91fa1ae3d8e52602be88453
     name: omejdn-server
     type: application
     urls:
     - https://catenax.github.io/gds-productdft-helm/omejdn-server-1.0.1.tgz
     version: 1.0.1
-generated: "2022-08-26T18:27:33.74057+05:30"
+generated: "2022-08-26T18:40:36.797034+05:30"
