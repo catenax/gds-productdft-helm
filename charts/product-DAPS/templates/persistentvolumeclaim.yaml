@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: {{ include "omejdn-server.fullname" . }}
+  name: daps-pv-claim
   labels:
-    app: postgres
+    app: daps
 spec:
   storageClassName: {{ .Values.persistence.storageClass }}
   accessModes:
