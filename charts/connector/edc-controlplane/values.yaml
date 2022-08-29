@@ -294,7 +294,7 @@ configuration:
     edc.datasource.transferprocess.name=transferprocess
     edc.datasource.transferprocess.url=jdbc:postgresql://db-postgres-postgresql:5432/edc_transferprocess
     edc.datasource.transferprocess.user=root
-    edc.datasource.transferprocess.password=P@ssword21
+    edc.datasource.transferprocess.password=
 
     # edc.api.auth.key=
     # edc.api.control.auth.apikey.key=
