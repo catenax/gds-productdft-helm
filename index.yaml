@@ -3,7 +3,7 @@ entries:
   dftbackend:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-08-29T12:52:49.726122+05:30"
+    created: "2022-08-29T12:59:25.361503+05:30"
     description: A Helm chart for Kubernetes
     digest: a827fba4a9876748085452b6ccd4b1dce9d1b98587f9cac5a152aac058d062db
     name: dftbackend
@@ -14,7 +14,7 @@ entries:
   dftfrontend:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-08-29T12:52:49.72644+05:30"
+    created: "2022-08-29T12:59:25.366433+05:30"
     description: A Helm chart for Kubernetes
     digest: 21b5b988563c92398b88d70a86a85b28a53cf58a7ebc8cfe989ab7676c9cb472
     name: dftfrontend
@@ -25,7 +25,7 @@ entries:
   edc-controlplane:
   - apiVersion: v2
     appVersion: 0.0.6
-    created: "2022-08-29T12:52:49.727766+05:30"
+    created: "2022-08-29T12:59:25.372452+05:30"
     description: EDC Control-Plane - The Eclipse DataSpaceConnector administration
       layer with responsibility of resource management and govern contracts and data
       transfers
@@ -39,7 +39,7 @@ entries:
   edc-dataplane:
   - apiVersion: v2
     appVersion: 0.0.6
-    created: "2022-08-29T12:52:49.730838+05:30"
+    created: "2022-08-29T12:59:25.377706+05:30"
     description: EDC Data-Plane - The Eclipse DataSpaceConnector data layer with responsibility
       of transferring and receiving data streams
     digest: c9bb98e65348919bf64ee80813595515cb03dd8adc4272c27bbf15995c9ffa68
@@ -52,12 +52,12 @@ entries:
   omejdn-server:
   - apiVersion: v2
     appVersion: 1.7.1
-    created: "2022-08-29T12:52:49.731585+05:30"
+    created: "2022-08-29T12:59:25.380557+05:30"
     description: DAPS server helm-chart
-    digest: a3b66fcab1a06aff583eb84fc935a001994437acf39489f6fb99e3717455cd50
+    digest: 2e7f78906d6df8c68e376f8f5c3cab8e12bcd32cab25b1a26409d17bd16eb4b8
     name: omejdn-server
     type: application
     urls:
     - https://catenax.github.io/gds-productdft-helm/omejdn-server-1.0.1.tgz
     version: 1.0.1
-generated: "2022-08-29T12:52:49.725452+05:30"
+generated: "2022-08-29T12:59:25.352683+05:30"
