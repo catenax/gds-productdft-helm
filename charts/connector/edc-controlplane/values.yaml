@@ -10,11 +10,11 @@ replicaCount: 1
 image:
   # -- Which derivate of the edc control-plane to use.
   # One of: [ghcr.io/catenax-ng/product-edc/edc-controlplane-postgresql-hashicorp-vault, ghcr.io/catenax-ng/product-edc/edc-controlplane-postgresql, ghcr.io/catenax-ng/product-edc/edc-controlplane-memory]
-  repository: ghcr.io/catenax-ng/product-edc/edc-controlplane-memory
+  repository: ghcr.io/catenax-ng/product-edc/edc-controlplane-postgresql-hashicorp-vault
   # -- [Kubernetes image pull policy](https://kubernetes.io/docs/concepts/containers/images/#image-pull-policy) to use
   pullPolicy: IfNotPresent
   # -- Overrides the image tag whose default is the chart appVersion.
-  tag: "sha-af065f3"
+  tag: "0.0.6"
 
 imagePullSecret:
   # -- Image pull secret to create to [obtain the container image from private registries](https://kubernetes.io/docs/concepts/containers/images/#using-a-private-registry)
@@ -139,7 +139,7 @@ ingresses:
   ## Public / Internet facing Ingress
   - enabled: true
     # -- The hostname to be used to precisely map incoming traffic onto the underlying network service
-    hostname: "edc-cp-consumer-pen.int.demo.catena-x.net"
+    hostname: "edc-cp.cx.dih-cloud.com"
     # -- Additional ingress annotations to add
     annotations: {}
     # -- EDC endpoints exposed by this ingress resource
@@ -239,8 +239,9 @@ configuration:
   properties: |-
     edc.api.auth.key=password
     edc.api.control.auth.apikey.key=X-Api-Key
-    edc.api.control.auth.apikey.value=pass
+    edc.api.control.auth.apikey.value=password
     edc.ids.catalog.id=urn:catalog:default
+    edc.hostname=edc-cp.cx.dih-cloud.com
     # edc.ids.curator=http://20.113.137.169
     edc.ids.description=Eclipse Dataspace Connector
     # edc.ids.endpoint=http://20.113.137.169:8282/api/v1/ids
@@ -248,47 +249,50 @@ configuration:
     # edc.ids.maintainer=http://20.113.137.169
     edc.ids.security.profile=base
     edc.ids.title=Eclipse Dataspace Connector
-    ids.webhook.address=http://edc-controlplane-consumer.pen:8282
+    ids.webhook.address=http://edc-cp.cx.dih-cloud.com:8282
     # DAPS Properties
-    edc.oauth.client.id=1C:34:19:5A:52:7B:85:29:CA:2E:33:27:A8:70:3A:FE:4B:D4:1D:1B:keyid:1C:34:19:5A:52:7B:85:29:CA:2E:33:27:A8:70:3A:FE:4B:D4:1D:1B
+    edc.oauth.client.id=
     edc.oauth.provider.audience=idsc:IDS_CONNECTORS_ALL
-    edc.oauth.provider.jwks.url=https://daps-pen.int.demo.catena-x.net/.well-known/jwks.json
-    edc.oauth.token.url=https://daps-pen.int.demo.catena-x.net/token
+    edc.oauth.provider.jwks.url=http://20.218.201.38:4567/.well-known/jwks.json
+    edc.oauth.token.url=http://20.218.201.38:4567/token
     # OAUTH Properties
-    edc.oauth.public.key.alias=edc-controlplane-consumer-pen-cert
-    edc.oauth.private.key.alias=edc-controlplane-consumer-pen-key
-
-    edc.transfer.dataplane.sync.endpoint=http://edc-dataplane-consumer.pen:9191/public
-    edc.transfer.proxy.endpoint=http://edc-dataplane-consumer.pen:8185/public
-    edc.transfer.proxy.token.verifier.publickey.alias=pen-consumer-data-plane-public-key
-    edc.transfer.proxy.token.signer.privatekey.alias=pen-consumer-data-plane-private-key
-    edc.public.key.alias=pen-consumer-data-plane-public-key
+    edc.oauth.public.key.alias=edc-prov-crt
+    edc.oauth.private.key.alias=edc-prov-key
+    edc.transfer.dataplane.sync.endpoint=http://edc-dp.cx.dih-cloud.com:9191/public
+    edc.transfer.proxy.endpoint=http://edc-dp.cx.dih-cloud.com:8185/public
+    edc.transfer.proxy.token.verifier.publickey.alias=a-data-plane-public-key
+    edc.transfer.proxy.token.signer.privatekey.alias=a-data-plane-private-key
+    edc.public.key.alias=a-data-plane-public-key
+    edc.vault.hashicorp.url=https://vault.demo.catena-x.net/
+    edc.vault.hashicorp.token=hvs.u7IJXyRxVi7iwjnnjR3ozeFR
+    edc.vault.hashicorp.timeout.seconds=30
+    edc.vault.hashicorp.api.secret.path=/v1/secret/data/data
+    edc.vault.hashicorp.health.check.standby.ok=true
     # Azure vault related configuration
-    edc.vault.clientid=fbedd445-6aa2-48cb-a855-0f62a28f923c
-    edc.vault.clientsecret=K65PAD3xzGUECJ2ybo6C_pjAVIUd4H.M~p
-    edc.vault.name=edc1vault
-    edc.vault.tenantid=495463c3-0991-4659-9cc5-94b4a3f7b1d6
-    edc.receiver.http.endpoint=http://192.168.1.45:10092/edc-backend/api/v1/public
-
+    #edc.vault.clientid=fbedd445-6aa2-48cb-a855-0f62a28f923c
+    #edc.vault.clientsecret=K65PAD3xzGUECJ2ybo6C_pjAVIUd4H.M~p
+    #edc.vault.name=edc1vault
+    #edc.vault.tenantid=495463c3-0991-4659-9cc5-94b4a3f7b1d6
+    #edc.receiver.http.endpoint=http://192.168.1.45:10092/edc-backend/api/v1/public
     #  Postgresql related configuration
     edc.datasource.asset.name=asset
-    edc.datasource.asset.url=jdbc:postgresql://20.113.137.169:5432/edc_asset
+    edc.datasource.asset.url=jdbc:postgresql://20.218.200.54:5432/edc_asset
     edc.datasource.asset.user=root
     edc.datasource.asset.password=P@ssword21
     edc.datasource.contractdefinition.name=contractdefinition
-    edc.datasource.contractdefinition.url=jdbc:postgresql://20.113.137.169:5432/edc_contractdefinition
+    edc.datasource.contractdefinition.url=jdbc:postgresql://20.218.200.54:5432/edc_contractdefinition
     edc.datasource.contractdefinition.user=root
     edc.datasource.contractdefinition.password=P@ssword21
     edc.datasource.contractnegotiation.name=contractnegotiation
-    edc.datasource.contractnegotiation.url=jdbc:postgresql://20.113.137.169:5432/edc_contractnegotiation
+    edc.datasource.contractnegotiation.url=jdbc:postgresql://20.218.200.54:5432/edc_contractnegotiation
     edc.datasource.contractnegotiation.user=root
     edc.datasource.contractnegotiation.password=P@ssword21
     edc.datasource.policy.name=policy
-    edc.datasource.policy.url=jdbc:postgresql://20.113.137.169:5432/edc_policy
+    edc.datasource.policy.url=jdbc:postgresql://20.218.200.54:5432/edc_policy
     edc.datasource.policy.user=root
     edc.datasource.policy.password=P@ssword21
     edc.datasource.transferprocess.name=transferprocess
-    edc.datasource.transferprocess.url=jdbc:postgresql://20.113.137.169:5432/edc_transferprocess
+    edc.datasource.transferprocess.url=jdbc:postgresql://20.218.200.54:5432/edc_transferprocess
     edc.datasource.transferprocess.user=root
     edc.datasource.transferprocess.password=P@ssword21
 
