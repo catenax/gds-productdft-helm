@@ -251,7 +251,7 @@ configuration:
     edc.ids.title=Eclipse Dataspace Connector
     ids.webhook.address=http://edc-cp.cx.dih-cloud.com:8282
     # DAPS Properties
-    edc.oauth.client.id=
+    edc.oauth.client.id=B5:9A:73:93:25:07:78:65:68:0A:20:1C:26:2D:0A:57:D3:7F:8B:AE:keyid:B5:9A:73:93:25:07:78:65:68:0A:20:1C:26:2D:0A:57:D3:7F:8B:AE
     edc.oauth.provider.audience=idsc:IDS_CONNECTORS_ALL
     edc.oauth.provider.jwks.url=https://daps-pen.int.demo.catena-x.net/.well-known/jwks.json
     edc.oauth.token.url=https://daps-pen.int.demo.catena-x.net/token
