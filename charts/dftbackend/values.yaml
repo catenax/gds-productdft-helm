@@ -40,7 +40,7 @@ service:
   type: ClusterIP
   port: 7070
 
-edc:
+dft:
   endpoints:
     ## Default api exposing health checks etc
     default:
