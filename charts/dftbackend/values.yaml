@@ -56,12 +56,13 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
     hostname: "dft.local.com"
+    
     endpoints:
-    - default
-    tls:
-      enabled: false
+     - default
+#    tls:
+#      enabled: false
       # -- If present overwrites the default secret name
-      secretName: ""
+#     secretName: ""
   #    hosts:
   #      - chart-example.local
 
