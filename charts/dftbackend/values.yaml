@@ -38,21 +38,30 @@ securityContext: {}
 
 service:
   type: ClusterIP
-  port: 8080
+  port: 7070
 
+edc:
+  endpoints:
+    ## Default api exposing health checks etc
+    default:
+      # -- The network port, which the "default" api is going to be exposed by the container, pod and service
+      port: "7070"
+      # -- The path mapping the "default" api is going to be exposed at
+      path: /dft 
+          
 ingress:
-  enabled: false
-  className: ""
-  annotations: {}
+  - enabled: true
+    className: "nginx"
+    annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
-  hosts:
-    - host: chart-example.local
-      paths:
-        - path: /
-          pathType: ImplementationSpecific
-  tls: []
-  #  - secretName: chart-example-tls
+    hostname: "dft.local.com"
+    endpoints:
+    - default
+    tls:
+      enabled: false
+      # -- If present overwrites the default secret name
+      secretName: ""
   #    hosts:
   #      - chart-example.local
 
