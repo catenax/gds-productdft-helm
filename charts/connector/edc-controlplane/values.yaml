@@ -145,8 +145,11 @@ ingresses:
     # -- EDC endpoints exposed by this ingress resource
     endpoints:
       - ids
+      - default
+      - data
+      - control
     # -- Defines the [ingress class](https://kubernetes.io/docs/concepts/services-networking/ingress/#ingress-class)  to use
-    className: ""
+    className: "nginx"
     # -- Enables TLS on the ingress resource
     tls: false
     ## Adds [cert-manager](https://cert-manager.io/docs/) annotations to the ingress resource

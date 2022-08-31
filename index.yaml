@@ -3,7 +3,7 @@ entries:
   dftbackend:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-08-31T11:07:45.297674+05:30"
+    created: "2022-08-31T12:12:06.889748+05:30"
     description: A Helm chart for Kubernetes
     digest: a827fba4a9876748085452b6ccd4b1dce9d1b98587f9cac5a152aac058d062db
     name: dftbackend
@@ -14,7 +14,7 @@ entries:
   dftfrontend:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-08-31T11:07:45.303815+05:30"
+    created: "2022-08-31T12:12:06.893267+05:30"
     description: A Helm chart for Kubernetes
     digest: 21b5b988563c92398b88d70a86a85b28a53cf58a7ebc8cfe989ab7676c9cb472
     name: dftfrontend
@@ -25,11 +25,11 @@ entries:
   edc-controlplane:
   - apiVersion: v2
     appVersion: 0.0.6
-    created: "2022-08-31T11:07:45.305152+05:30"
+    created: "2022-08-31T12:12:06.894466+05:30"
     description: EDC Control-Plane - The Eclipse DataSpaceConnector administration
       layer with responsibility of resource management and govern contracts and data
       transfers
-    digest: f6420179765e333852cabe1a5e7474c4084daa177168a2cd1624f29ff3177dcc
+    digest: 30781919112c9f43028a835971451e67d1a22bdd3e17a3182fe3df482aad1147
     home: https://github.com/catenax-ng/product-edc/deployment/helm/edc-controlplane
     name: edc-controlplane
     type: application
@@ -39,10 +39,10 @@ entries:
   edc-dataplane:
   - apiVersion: v2
     appVersion: 0.0.6
-    created: "2022-08-31T11:07:45.306553+05:30"
+    created: "2022-08-31T12:12:06.895493+05:30"
     description: EDC Data-Plane - The Eclipse DataSpaceConnector data layer with responsibility
       of transferring and receiving data streams
-    digest: 4c8b54ca4cc62b0245d053bc9b87fd8840bf995b4990854861f7a02a1d0718c4
+    digest: da013451b02622a82eab475f028b96ca0e047d2001efc9f45cadc98e07f3b1dc
     home: https://github.com/catenax-ng/product-edc/deployment/helm/edc-dataplane
     name: edc-dataplane
     type: application
@@ -52,7 +52,7 @@ entries:
   omejdn-server:
   - apiVersion: v2
     appVersion: 1.7.1
-    created: "2022-08-31T11:07:45.317004+05:30"
+    created: "2022-08-31T12:12:06.902492+05:30"
     description: DAPS server helm-chart
     digest: df03844a1a2070332243736400ccf0963666da6ebdaa71349eab83b5191becfe
     name: omejdn-server
@@ -60,4 +60,4 @@ entries:
     urls:
     - https://catenax.github.io/gds-productdft-helm/omejdn-server-1.0.1.tgz
     version: 1.0.1
-generated: "2022-08-31T11:07:45.288141+05:30"
+generated: "2022-08-31T12:12:06.880185+05:30"
