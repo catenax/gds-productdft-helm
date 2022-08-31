@@ -88,10 +88,12 @@ persistence:
   # -- If `true` persistent volume will be used to store clients and users configuration
   enabled: true
   # -- Storage class to claim a volume.
-  storageClass: "azurefile"
+  storageClass: ""
   # -- Volume size
   storageSize: "1Gi"
-
+  mountPath: /data/daps
+  accessModes:
+    - ReadWriteOnce
 env:
   # -- Additional env variables
   config: {}

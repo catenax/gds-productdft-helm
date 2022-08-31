@@ -209,7 +209,7 @@ configuration:
     edc.vault.hashicorp.url=https://vault.demo.catena-x.net/
     edc.vault.hashicorp.token=hvs.u7IJXyRxVi7iwjnnjR3ozeFR
     edc.vault.hashicorp.timeout.seconds=30
-    edc.vault.hashicorp.api.secret.path=/v1/secret/data/data
+    edc.vault.hashicorp.api.secret.path=/v1/secret/data
     edc.vault.hashicorp.health.check.standby.ok=true
     # edc.api.control.auth.apikey.key=
     # edc.api.control.auth.apikey.value=
