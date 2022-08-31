@@ -59,10 +59,10 @@ ingress:
     
     endpoints:
      - default
-#    tls:
-#      enabled: false
+    tls:
+     enabled: false
       # -- If present overwrites the default secret name
-#     secretName: ""
+     secretName: ""
   #    hosts:
   #      - chart-example.local
 
