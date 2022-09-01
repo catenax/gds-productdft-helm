@@ -69,3 +69,4 @@ configuration:
      REACT_APP_API_URL=
      REACT_APP_API_KEY=
      REACT_APP_DEFAULT_COMPANY_BPN=
+     
