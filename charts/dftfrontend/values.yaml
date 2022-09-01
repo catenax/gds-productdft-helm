@@ -47,8 +47,8 @@ service:
 #      path: /api  
           
 ingress:
-  enabled: true
-  className: "nginx"
+  - enabled: true
+    className: "nginx"
 #  annotations:
 #    nginx.ingress.kubernetes.io/backend-protocol: HTTP
 #    nginx.ingress.kubernetes.io/affinity: "cookie"
@@ -56,8 +56,8 @@ ingress:
   #annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
-  hostname: "dftfrontend.local.com"
-  tls:
+    hostname: "dftfrontend.local.com"
+    tls:
       enabled: false
       # -- If present overwrites the default secret name
       secretName: ""
