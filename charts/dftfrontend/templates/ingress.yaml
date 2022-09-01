@@ -4,7 +4,6 @@ metadata:
   name: {{ include "dftfrontend.fullname" . }}
   labels:
       {{- include "dftfrontend.labels" . | nindent 4 }}
-  {{- with .Values.ingress.annotations }}
   annotations:
     {{- toYaml . | nindent 4 }}
    {{- end }}
