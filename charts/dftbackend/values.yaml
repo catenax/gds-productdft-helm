@@ -8,7 +8,7 @@ image:
   repository: ghcr.io/catenax/gds-product-dft/product-dft-backend
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.0.0"
+  tag: "1.1.0"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -115,3 +115,8 @@ configuration:
     dft.apiKey=
     ## Manufacturer Id
     manufacturerId=
+    # consumer config
+    edc.consumer.hostname=
+    edc.consumer.apikeyheader=
+    edc.consumer.apikey=
+    edc.consumer.datauri=
