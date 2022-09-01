@@ -12,10 +12,10 @@ spec:
   ingressClassName: {{ .Values.ingress.className }}
   tls:
     - hosts:
-        - {{ .Values.ingress.host }}
+        - {{ .Values.ingress.hostname }}
       secretName: {{ include "dftfrontend.fullname" . }}-tls
   rules:
-    - host: {{ .Values.ingress.host }}
+    - host: {{ .Values.ingress.hostname }}
       http:
         paths:
           - path: /
