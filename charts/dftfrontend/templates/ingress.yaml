@@ -6,8 +6,22 @@ metadata:
       {{- include "dftfrontend.labels" . | nindent 4 }}
   {{- with .Values.ingress.annotations }}
   annotations:
+    {{- if and .className (not (semverCompare ">=1.18-0" $gitVersion)) }}
+    {{- if not (hasKey .annotations "kubernetes.io/ingress.class") }}
+    {{- $_ := set .annotations "kubernetes.io/ingress.class" .className}}
+    {{- end }}
+    {{- end }}
+    {{- if .certManager }}
+    {{- if .certManager.issuer }}
+    {{- $_ := set .annotations "cert-manager.io/issuer" .certManager.issuer}}
+    {{- end }}
+    {{- if .certManager.clusterIssuer }}
+    {{- $_ := set .annotations "cert-manager.io/cluster-issuer" .certManager.clusterIssuer}}
+    {{- end }}
+    {{- end }}
+    {{- with .annotations }}
     {{- toYaml . | nindent 4 }}
-  {{- end }}
+    {{- end }}
 spec:
   ingressClassName: {{ .Values.ingress.className }}
   tls:
