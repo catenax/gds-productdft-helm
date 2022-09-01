@@ -4,9 +4,9 @@ metadata:
   name: {{ include "dftfrontend.fullname" . }}
   labels:
       {{- include "dftfrontend.labels" . | nindent 4 }}
+      {{- end }}
   annotations:
     {{- toYaml . | nindent 4 }}
-   {{- end }}
 spec:
   ingressClassName: {{ .Values.ingress.className }}
   tls:
