@@ -39,15 +39,16 @@ securityContext: {}
 service:
   type: ClusterIP
   port: 7070
+  targetPort: 8080
 
-dft:
+dftbackend:
   endpoints:
     ## Default api exposing health checks etc
     default:
       # -- The network port, which the "default" api is going to be exposed by the container, pod and service
       port: "7070"
       # -- The path mapping the "default" api is going to be exposed at
-      path: /dft/api/ 
+      path: /dftbackend 
           
 ingress:
   - enabled: true
