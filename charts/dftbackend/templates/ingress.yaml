@@ -1,7 +1,7 @@
 {{- $fullName := include "dftbackend.fullname" . }}
 {{- $labels := include "dftbackend.labels" . | nindent 4 }}
 {{- $gitVersion := .Capabilities.KubeVersion.GitVersion }}
-{{- $dftEndpoints := .Values.dft.endpoints }}
+{{- $dftbackendEndpoints := .Values.dftbackend.endpoints }}
 {{- $namespace := .Release.Namespace }}
 {{- range .Values.ingresses }}
 {{- if and .enabled .endpoints }}
@@ -56,9 +56,9 @@ spec:
     - host: {{ .hostname }}
       http:
         paths:
-          {{- $ingressdftEndpoints := .endpoints }}
-          {{- range  $name, $mapping := $dftEndpoints }}
-          {{- if (has $name $ingressdftEndpoints) }}
+          {{- $ingressdftbackendEndpoints := .endpoints }}
+          {{- range  $name, $mapping := $dftbackendEndpoints }}
+          {{- if (has $name $ingressdftbackendEndpoints) }}
           - path: {{ $mapping.path }}
             pathType: Prefix
             backend:
