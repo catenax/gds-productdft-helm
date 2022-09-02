@@ -141,7 +141,8 @@ ingresses:
     # -- The hostname to be used to precisely map incoming traffic onto the underlying network service
     hostname: "edc-cp.cx.dih-cloud.com"
     # -- Additional ingress annotations to add
-    annotations: {}
+    annotations:
+      nginx.ingress.kubernetes.io/use-regex: "true"
     # -- EDC endpoints exposed by this ingress resource
     endpoints:
       - ids
