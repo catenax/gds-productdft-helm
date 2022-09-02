@@ -40,14 +40,14 @@ service:
   type: ClusterIP
   port: 7070
 
-api:
+dft:
   endpoints:
     ## Default api exposing health checks etc
     default:
       # -- The network port, which the "default" api is going to be exposed by the container, pod and service
       port: "7070"
       # -- The path mapping the "default" api is going to be exposed at
-      path: /api/ 
+      path: /dft/api/ 
           
 ingress:
   - enabled: true
