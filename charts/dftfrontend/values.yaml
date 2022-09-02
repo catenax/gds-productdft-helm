@@ -13,11 +13,11 @@ serviceAccount:
   annotations: {}
   # The name of the service account to use.
   # If not set and create is true, a name is generated using the fullname template
-  name: "dft-service"
+  name: " "
   
 imagePullSecrets: []
-nameOverride: "product-dft-frontend"
-fullnameOverride: "dft-frontend"
+nameOverride: " "
+fullnameOverride: " "
 portContainer: 80
 podAnnotations: {}
 
@@ -44,15 +44,7 @@ dft:
       # -- The network port, which the "default" api is going to be exposed by the container, pod and service
       port: "80"
       # -- The path mapping the "default" api is going to be exposed at
-      path: /dft
-#edc:
-#  endpoints:
-    ## Default api exposing health checks etc
-#    default:
-      # -- The network port, which the "default" api is going to be exposed by the container, pod and service
-#      port: "7070"
-      # -- The path mapping the "default" api is going to be exposed at
-#      path: /api  
+      path: /dft  
           
 ingress:
   - enabled: true
@@ -61,6 +53,8 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
     hostname: "dft.local.com"
+    endpoints:
+     - default
     tls:
      enabled: false
       # -- If present overwrites the default secret name
