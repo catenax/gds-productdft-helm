@@ -1,10 +1,10 @@
 replicaCount: 1
 
 image:
-  repository: ghcr.io/catenax-ng/product-dft-frontend
+  repository: ghcr.io/catenax/gds-product-dft/product-dft-frontend
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "main"
+  tag: "1.0.0"
   
 serviceAccount:
   # Specifies whether a service account should be created
