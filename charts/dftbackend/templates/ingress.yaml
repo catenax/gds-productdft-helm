@@ -21,7 +21,8 @@ metadata:
   labels:
     {{- $labels | nindent 2 }}
   annotations:
-    {{ toYaml .Values.ingress.annotations | indent 4 }}
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    kubernetes.io/tls-acme: 'true'
 spec:
   {{- if and .className (semverCompare ">=1.18-0" $gitVersion) }}
   ingressClassName: {{ .className }}

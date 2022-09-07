@@ -50,9 +50,7 @@ dft:
 ingress:
   - enabled: true
     className: "nginx"
-    annotations:
-        cert-manager.io/cluster-issuer: letsencrypt-prod
-        kubernetes.io/tls-acme: 'true'
+    annotations: {}
     # kubernetes.io/tls-acme: "true"
     hostname: "dft.local.com"
     endpoints:
