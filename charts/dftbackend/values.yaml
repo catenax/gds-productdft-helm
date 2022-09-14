@@ -60,10 +60,14 @@ ingress:
     
     endpoints:
      - default
-    tls:
-     enabled: true
+
+    tls: true
       # -- If present overwrites the default secret name
-     tlsSecret: "backend-tls-secret"
+    certManager:
+      # -- If preset enables certificate generation via cert-manager namespace scoped issuer
+      #issuer: ""
+      # -- If preset enables certificate generation via cert-manager cluster-wide issuer
+      clusterIssuer: "letsencrypt-prod"
   #    hosts:
   #      - chart-example.local
 

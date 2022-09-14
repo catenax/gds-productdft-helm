@@ -55,10 +55,14 @@ ingress:
     hostname: "dft.local.com"
     endpoints:
      - default
-    tls:
-     enabled: false
+
+    tls: true
       # -- If present overwrites the default secret name
-     secretName: ""
+    certManager:
+      # -- If preset enables certificate generation via cert-manager namespace scoped issuer
+      #issuer: ""
+      # -- If preset enables certificate generation via cert-manager cluster-wide issuer
+      clusterIssuer: "letsencrypt-prod"
   #    hosts:
   #      - chart-example.local
 #  annotations:
