@@ -61,9 +61,10 @@ ingress:
     endpoints:
      - default
 
-    tls: true
+    tls: 
+     enabled: true
       # -- If present overwrites the default secret name
-    certManager:
+     certManager:
       # -- If preset enables certificate generation via cert-manager namespace scoped issuer
       #issuer: ""
       # -- If preset enables certificate generation via cert-manager cluster-wide issuer
