@@ -56,7 +56,7 @@ ingress:
   - enabled: true
     className: "nginx"
     annotations: {}
-    # kubernetes.io/ingress.class: nginx
+     kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
     hostname: ""
     
@@ -64,8 +64,7 @@ ingress:
      - default
 
     tls: 
-      enabled: true
-   #   secretName: ""
+      secretName: ""
       # -- If present overwrites the default secret name
     certManager:
       # -- If preset enables certificate generation via cert-manager namespace scoped issuer
