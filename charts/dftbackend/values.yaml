@@ -8,7 +8,7 @@ image:
   repository: ghcr.io/catenax/gds-product-dft/product-dft-backend
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.1.4"
+  tag: "latest"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -49,8 +49,10 @@ dftbackend:
       port: "7070"
       # -- The path mapping the "default" api is going to be exposed at
       path: /dftbackend 
+
+serviceDomainName: ""
           
-ingress:
+ingresses:
   - enabled: true
     className: "nginx"
     annotations: {}
@@ -62,10 +64,8 @@ ingress:
      - default
 
     tls: 
-     
-     enabled: true
-
-     secretName: ""
+      enabled: true
+      secretName: "dft-secret-tls"
       # -- If present overwrites the default secret name
     certManager:
       # -- If preset enables certificate generation via cert-manager namespace scoped issuer

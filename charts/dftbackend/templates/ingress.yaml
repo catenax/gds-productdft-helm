@@ -6,6 +6,10 @@
 {{- range .Values.ingresses }}
 {{- if and .enabled .endpoints }}
 {{- $ingressName := printf "%s-%s" $fullName .hostname }}
+{{- if .Values.serviceDomainName }}
+{{- $serviceDomainName := .Values.serviceDomainName }}
+{{- else }}
+{{- $serviceDomainName := .hostname }}
 ---
 {{- if semverCompare ">=1.19-0" $gitVersion }}
 apiVersion: networking.k8s.io/v1
@@ -41,11 +45,11 @@ spec:
   {{- if and .className (semverCompare ">=1.18-0" $gitVersion) }}
   ingressClassName: {{ .className }}
   {{- end }}
-  {{- if .hostname }}
+  {{- if .serviceDomainName }}
   {{- if .tls.enabled }}
   tls:
     - hosts:
-        - {{ .hostname }}
+        - {{ .serviceDomainName }}
       {{- if .tls.secretName }}
       secretName: {{ .tls.secretName }}
       {{- else }}
@@ -53,7 +57,7 @@ spec:
       {{- end }}
   {{- end }}
   rules:
-    - host: {{ .hostname }}
+    - host: {{ .serviceDomainName }}
       http:
         paths:
           {{- $ingressdftbackendEndpoints := .endpoints }}
