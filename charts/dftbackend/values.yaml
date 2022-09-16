@@ -50,7 +50,7 @@ dftbackend:
       # -- The path mapping the "default" api is going to be exposed at
       path: /dftbackend 
 
-serviceDomainName: ""
+#serviceDomainName: "dft.local.com"
           
 ingresses:
   - enabled: true
