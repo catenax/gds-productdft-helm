@@ -52,14 +52,14 @@ ingress:
     className: "nginx"
     annotations: {}
     # kubernetes.io/tls-acme: "true"
-    hostname: "dft.local.com"
+    hostname: ""
     endpoints:
      - default
 
     tls: 
      enabled: true
 
-     secretName: ""
+     #secretName: ""
       # -- If present overwrites the default secret name
     certManager:
       # -- If preset enables certificate generation via cert-manager namespace scoped issuer
