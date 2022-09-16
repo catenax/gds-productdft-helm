@@ -52,7 +52,7 @@ dftbackend:
 
 #serviceDomainName: "dft.local.com"
           
-ingresses:
+ingress:
   - enabled: true
     className: "nginx"
     annotations: {}

@@ -2,8 +2,18 @@ apiVersion: v1
 entries:
   dftbackend:
   - apiVersion: v2
+    appVersion: 1.3.0
+    created: "2022-09-16T14:16:00.959389+05:30"
+    description: A Helm chart for Kubernetes
+    digest: d7f53fab647d6cd6ad924e02f4d314aa132ccf1f719218c63c5ab19a4e4b0b91
+    name: dftbackend
+    type: application
+    urls:
+    - https://catenax.github.io/gds-productdft-helm/dftbackend-1.3.0.tgz
+    version: 1.3.0
+  - apiVersion: v2
     appVersion: 1.2.9
-    created: "2022-09-16T14:09:40.193032+05:30"
+    created: "2022-09-16T14:16:00.95885+05:30"
     description: A Helm chart for Kubernetes
     digest: 6bd329d1d1fa2c95dcbeb4723cd51c5ec0eeb6626099aa474b6adc38e5a498aa
     name: dftbackend
@@ -13,7 +23,7 @@ entries:
     version: 1.2.9
   - apiVersion: v2
     appVersion: 1.2.8
-    created: "2022-09-16T14:09:40.191695+05:30"
+    created: "2022-09-16T14:16:00.958432+05:30"
     description: A Helm chart for Kubernetes
     digest: 4a43047542b521c6f93b682e871f34d179b5a9aec4112bc1926f1fe00f34e588
     name: dftbackend
@@ -23,7 +33,7 @@ entries:
     version: 1.2.8
   - apiVersion: v2
     appVersion: 1.2.7
-    created: "2022-09-16T14:09:40.184883+05:30"
+    created: "2022-09-16T14:16:00.957987+05:30"
     description: A Helm chart for Kubernetes
     digest: 49b1fcd83a9f9f6fb78e3579299a94871c15465a6a5606fe2a60caeaf3777013
     name: dftbackend
@@ -33,7 +43,7 @@ entries:
     version: 1.2.7
   - apiVersion: v2
     appVersion: 1.2.6
-    created: "2022-09-16T14:09:40.175214+05:30"
+    created: "2022-09-16T14:16:00.957549+05:30"
     description: A Helm chart for Kubernetes
     digest: 2860d9c113cb02492e5995b74e2f2a9b7ee6688c4a0b137010ae4430545a74fe
     name: dftbackend
@@ -43,7 +53,7 @@ entries:
     version: 1.2.6
   - apiVersion: v2
     appVersion: 1.2.5
-    created: "2022-09-16T14:09:40.174703+05:30"
+    created: "2022-09-16T14:16:00.957121+05:30"
     description: A Helm chart for Kubernetes
     digest: cf7d76db67846b9b01daab6778202da5e713e5e8052e03b6bfec27623f9a2d57
     name: dftbackend
@@ -53,7 +63,7 @@ entries:
     version: 1.2.5
   - apiVersion: v2
     appVersion: 1.2.4
-    created: "2022-09-16T14:09:40.174253+05:30"
+    created: "2022-09-16T14:16:00.956655+05:30"
     description: A Helm chart for Kubernetes
     digest: e4c83c29d67bbc3743547ea9a1fdd9000d1b4ea7c77e5e4c5ee583b21b6233bc
     name: dftbackend
@@ -63,7 +73,7 @@ entries:
     version: 1.2.4
   - apiVersion: v2
     appVersion: 1.2.3
-    created: "2022-09-16T14:09:40.173814+05:30"
+    created: "2022-09-16T14:16:00.956204+05:30"
     description: A Helm chart for Kubernetes
     digest: f4522a0243377b6b3dc78781dc1ed234f15775e0f036bc2cf2f7c8116a3bb7b0
     name: dftbackend
@@ -73,7 +83,7 @@ entries:
     version: 1.2.3
   - apiVersion: v2
     appVersion: 1.2.2
-    created: "2022-09-16T14:09:40.173374+05:30"
+    created: "2022-09-16T14:16:00.95574+05:30"
     description: A Helm chart for Kubernetes
     digest: 2d69da80152f8438f9601dd44b2a72c59323c095fe557bfff02d06bc281c84d1
     name: dftbackend
@@ -83,7 +93,7 @@ entries:
     version: 1.2.2
   - apiVersion: v2
     appVersion: 1.2.1
-    created: "2022-09-16T14:09:40.172921+05:30"
+    created: "2022-09-16T14:16:00.95528+05:30"
     description: A Helm chart for Kubernetes
     digest: d505abf98b665ae92b53f34eb1bc1b41ccd627363244409912b8fff08a8df5a6
     name: dftbackend
@@ -93,7 +103,7 @@ entries:
     version: 1.2.1
   - apiVersion: v2
     appVersion: 1.2.0
-    created: "2022-09-16T14:09:40.17247+05:30"
+    created: "2022-09-16T14:16:00.954801+05:30"
     description: A Helm chart for Kubernetes
     digest: ed94a4ad98d3d1f6884e84a94d06f4ba3e87d23e182838646c4e4e9a4187921e
     name: dftbackend
@@ -103,7 +113,7 @@ entries:
     version: 1.2.0
   - apiVersion: v2
     appVersion: 1.1.9
-    created: "2022-09-16T14:09:40.172029+05:30"
+    created: "2022-09-16T14:16:00.954336+05:30"
     description: A Helm chart for Kubernetes
     digest: bdf06f46d68a436e59a8ca5c04d58cec0cb844681b8eb10732ca5e76edbe6b10
     name: dftbackend
@@ -113,7 +123,7 @@ entries:
     version: 1.1.9
   - apiVersion: v2
     appVersion: 1.1.8
-    created: "2022-09-16T14:09:40.171568+05:30"
+    created: "2022-09-16T14:16:00.953859+05:30"
     description: A Helm chart for Kubernetes
     digest: 64f75c5e62711382ae4724f38e529bdc394e38c019d49ce21d86761587aaf03a
     name: dftbackend
@@ -123,7 +133,7 @@ entries:
     version: 1.1.8
   - apiVersion: v2
     appVersion: 1.1.7
-    created: "2022-09-16T14:09:40.171122+05:30"
+    created: "2022-09-16T14:16:00.953351+05:30"
     description: A Helm chart for Kubernetes
     digest: 23aba1bc48174c4a07d6e160e92f8c51e06903d9d1208789711401a69352a6af
     name: dftbackend
@@ -133,7 +143,7 @@ entries:
     version: 1.1.7
   - apiVersion: v2
     appVersion: 1.1.6
-    created: "2022-09-16T14:09:40.170665+05:30"
+    created: "2022-09-16T14:16:00.95286+05:30"
     description: A Helm chart for Kubernetes
     digest: e10bf7abf5a572d64ddae2860322e5d27267181dd087716220f7f4aad864da1f
     name: dftbackend
@@ -143,7 +153,7 @@ entries:
     version: 1.1.6
   - apiVersion: v2
     appVersion: 1.1.5
-    created: "2022-09-16T14:09:40.170197+05:30"
+    created: "2022-09-16T14:16:00.951409+05:30"
     description: A Helm chart for Kubernetes
     digest: 0b6cb76e5c0109086a52721910198cd3e95137e0ac71e445f8f2c2146d269e70
     name: dftbackend
@@ -153,7 +163,7 @@ entries:
     version: 1.1.5
   - apiVersion: v2
     appVersion: 1.1.4
-    created: "2022-09-16T14:09:40.169713+05:30"
+    created: "2022-09-16T14:16:00.950889+05:30"
     description: A Helm chart for Kubernetes
     digest: 1f1f4bc16c94b9b8706d5c1b3e0f0bebef8812ae603e16adc94b211328a473d9
     name: dftbackend
@@ -163,7 +173,7 @@ entries:
     version: 1.1.4
   - apiVersion: v2
     appVersion: 1.1.3
-    created: "2022-09-16T14:09:40.169236+05:30"
+    created: "2022-09-16T14:16:00.950411+05:30"
     description: A Helm chart for Kubernetes
     digest: 9fde21ff5ff034bf83dd22957db426da1a65810c9005b300f869be4be5b6c19b
     name: dftbackend
@@ -173,7 +183,7 @@ entries:
     version: 1.1.3
   - apiVersion: v2
     appVersion: 1.1.2
-    created: "2022-09-16T14:09:40.168731+05:30"
+    created: "2022-09-16T14:16:00.949958+05:30"
     description: A Helm chart for Kubernetes
     digest: 867379ad3e541ca92c7e31222595f688c07efc200f9c8b00a64cf6fc26d960b0
     name: dftbackend
@@ -183,7 +193,7 @@ entries:
     version: 1.1.2
   - apiVersion: v2
     appVersion: 1.1.1
-    created: "2022-09-16T14:09:40.167996+05:30"
+    created: "2022-09-16T14:16:00.949497+05:30"
     description: A Helm chart for Kubernetes
     digest: 72adf14138bfac67cfce8e42303aa79b337dd18f3ab8ac1e92d43a3110605ccb
     name: dftbackend
@@ -193,7 +203,7 @@ entries:
     version: 1.1.1
   - apiVersion: v2
     appVersion: 1.1.0
-    created: "2022-09-16T14:09:40.166038+05:30"
+    created: "2022-09-16T14:16:00.949074+05:30"
     description: A Helm chart for Kubernetes
     digest: 25509caea8cb4515910df3ad71cf01b5e905f9bd5cf9c8ad9712eb98cd84e195
     name: dftbackend
@@ -203,7 +213,7 @@ entries:
     version: 1.1.0
   - apiVersion: v2
     appVersion: 1.0.7
-    created: "2022-09-16T14:09:40.165571+05:30"
+    created: "2022-09-16T14:16:00.94859+05:30"
     description: A Helm chart for Kubernetes
     digest: 4ab9aff411810d92a42e6e32ccfed2a626d1255a213917a2bec9e0584aa2fc24
     name: dftbackend
@@ -213,7 +223,7 @@ entries:
     version: 1.0.7
   - apiVersion: v2
     appVersion: 1.0.6
-    created: "2022-09-16T14:09:40.16507+05:30"
+    created: "2022-09-16T14:16:00.948125+05:30"
     description: A Helm chart for Kubernetes
     digest: 4edaa3a525c19ab40fc17123f40180235146dc6f81ba556cb637829e5bd613ce
     name: dftbackend
@@ -223,7 +233,7 @@ entries:
     version: 1.0.6
   - apiVersion: v2
     appVersion: 1.0.5
-    created: "2022-09-16T14:09:40.164587+05:30"
+    created: "2022-09-16T14:16:00.947687+05:30"
     description: A Helm chart for Kubernetes
     digest: 69d9f5fd6ba1f3cb5f43d32e579368cbbf00294c85270887dfbdbc2517550656
     name: dftbackend
@@ -233,7 +243,7 @@ entries:
     version: 1.0.5
   - apiVersion: v2
     appVersion: 1.0.4
-    created: "2022-09-16T14:09:40.164095+05:30"
+    created: "2022-09-16T14:16:00.947189+05:30"
     description: A Helm chart for Kubernetes
     digest: c4e9288664e32ffdc98e535bb0624fe9b4ec3c705c0bd5a7fa4961758fb939df
     name: dftbackend
@@ -243,7 +253,7 @@ entries:
     version: 1.0.4
   - apiVersion: v2
     appVersion: 1.0.3
-    created: "2022-09-16T14:09:40.163572+05:30"
+    created: "2022-09-16T14:16:00.946681+05:30"
     description: A Helm chart for Kubernetes
     digest: db5f10734c364fa11719df43e0ed569284d02f505f30f824906930e9fae5f6fe
     name: dftbackend
@@ -253,7 +263,7 @@ entries:
     version: 1.0.3
   - apiVersion: v2
     appVersion: 1.0.2
-    created: "2022-09-16T14:09:40.163031+05:30"
+    created: "2022-09-16T14:16:00.946153+05:30"
     description: A Helm chart for Kubernetes
     digest: 51406dd5b49bf89c9062d5c00e855be2acd33e25ee812e6a64b80081293b5faf
     name: dftbackend
@@ -263,7 +273,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-09-16T14:09:40.162462+05:30"
+    created: "2022-09-16T14:16:00.945625+05:30"
     description: A Helm chart for Kubernetes
     digest: 534cf87ad5fdf49e43228f827fc1c7ba7c3edafdbefce2f96aa1fa58767d831a
     name: dftbackend
@@ -273,7 +283,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-09-16T14:09:40.161926+05:30"
+    created: "2022-09-16T14:16:00.945026+05:30"
     description: A Helm chart for Kubernetes
     digest: a827fba4a9876748085452b6ccd4b1dce9d1b98587f9cac5a152aac058d062db
     name: dftbackend
@@ -284,7 +294,7 @@ entries:
   dftfrontend:
   - apiVersion: v2
     appVersion: 1.2.7
-    created: "2022-09-16T14:09:40.205149+05:30"
+    created: "2022-09-16T14:16:00.970572+05:30"
     description: A Helm chart for Kubernetes
     digest: d0d67667ece5e82ca442d8306e6264e934d43877e61544d8d1a4fbd28b380569
     name: dftfrontend
@@ -294,7 +304,7 @@ entries:
     version: 1.2.7
   - apiVersion: v2
     appVersion: 1.2.6
-    created: "2022-09-16T14:09:40.204788+05:30"
+    created: "2022-09-16T14:16:00.970175+05:30"
     description: A Helm chart for Kubernetes
     digest: 2d71e908962b540a82c7806070f560297a5eb9aa3ba64f52dfbdc2abc238083f
     name: dftfrontend
@@ -304,7 +314,7 @@ entries:
     version: 1.2.6
   - apiVersion: v2
     appVersion: 1.2.5
-    created: "2022-09-16T14:09:40.20444+05:30"
+    created: "2022-09-16T14:16:00.969725+05:30"
     description: A Helm chart for Kubernetes
     digest: c0a35bb335c0c009e776a325a6872669f4116d2350b9f39d4f0c31e8a3454868
     name: dftfrontend
@@ -314,7 +324,7 @@ entries:
     version: 1.2.5
   - apiVersion: v2
     appVersion: 1.2.4
-    created: "2022-09-16T14:09:40.204061+05:30"
+    created: "2022-09-16T14:16:00.968483+05:30"
     description: A Helm chart for Kubernetes
     digest: 25b99281979b36eaf1150f018d351010f597b809db513a59c810c58f49671a56
     name: dftfrontend
@@ -324,7 +334,7 @@ entries:
     version: 1.2.4
   - apiVersion: v2
     appVersion: 1.2.3
-    created: "2022-09-16T14:09:40.203665+05:30"
+    created: "2022-09-16T14:16:00.96817+05:30"
     description: A Helm chart for Kubernetes
     digest: de5bb538b7eebdc3e94a705d412600d68ffe835274a4ef7353376028e14aba6d
     name: dftfrontend
@@ -334,7 +344,7 @@ entries:
     version: 1.2.3
   - apiVersion: v2
     appVersion: 1.2.2
-    created: "2022-09-16T14:09:40.203226+05:30"
+    created: "2022-09-16T14:16:00.967858+05:30"
     description: A Helm chart for Kubernetes
     digest: 82082943511507445db7ca225ca5a0708e568ff7f0ade595d5921fcbedbe156b
     name: dftfrontend
@@ -344,7 +354,7 @@ entries:
     version: 1.2.2
   - apiVersion: v2
     appVersion: 1.2.1
-    created: "2022-09-16T14:09:40.202758+05:30"
+    created: "2022-09-16T14:16:00.967425+05:30"
     description: A Helm chart for Kubernetes
     digest: 24a063fddce932219c2451df2800f3c1a2a9b5b3fbb1536a5bd8bd3ba4917ba4
     name: dftfrontend
@@ -354,7 +364,7 @@ entries:
     version: 1.2.1
   - apiVersion: v2
     appVersion: 1.2.0
-    created: "2022-09-16T14:09:40.2012+05:30"
+    created: "2022-09-16T14:16:00.967108+05:30"
     description: A Helm chart for Kubernetes
     digest: dbe499881b437946b6e5a5211d602cb1d3d339dd2921cffd0fdac3a866cc7098
     name: dftfrontend
@@ -364,7 +374,7 @@ entries:
     version: 1.2.0
   - apiVersion: v2
     appVersion: 1.1.9
-    created: "2022-09-16T14:09:40.200832+05:30"
+    created: "2022-09-16T14:16:00.96679+05:30"
     description: A Helm chart for Kubernetes
     digest: e6df17ed239a1543a92a0e5499be39a23c9a930151de4588f99d0a78f7bcd232
     name: dftfrontend
@@ -374,7 +384,7 @@ entries:
     version: 1.1.9
   - apiVersion: v2
     appVersion: 1.1.8
-    created: "2022-09-16T14:09:40.200433+05:30"
+    created: "2022-09-16T14:16:00.966449+05:30"
     description: A Helm chart for Kubernetes
     digest: 21c5339a9c73861a0edb35b7bd444734e2b5023f658e555a3ee10da8fbb5f9b8
     name: dftfrontend
@@ -384,7 +394,7 @@ entries:
     version: 1.1.8
   - apiVersion: v2
     appVersion: 1.1.7
-    created: "2022-09-16T14:09:40.199962+05:30"
+    created: "2022-09-16T14:16:00.966109+05:30"
     description: A Helm chart for Kubernetes
     digest: ad73612908a0d027c861e2bfa69b2e1d02a279dc87a1468fa14e8c5c024fa12f
     name: dftfrontend
@@ -394,7 +404,7 @@ entries:
     version: 1.1.7
   - apiVersion: v2
     appVersion: 1.1.6
-    created: "2022-09-16T14:09:40.199476+05:30"
+    created: "2022-09-16T14:16:00.965742+05:30"
     description: A Helm chart for Kubernetes
     digest: d786b4ff901e2a115c10df282c30086d92eb36819d1fa2c5a4948016ca41c1d1
     name: dftfrontend
@@ -404,7 +414,7 @@ entries:
     version: 1.1.6
   - apiVersion: v2
     appVersion: 1.1.5
-    created: "2022-09-16T14:09:40.199135+05:30"
+    created: "2022-09-16T14:16:00.965388+05:30"
     description: A Helm chart for Kubernetes
     digest: fca874f2c4dd3bbcc4e30ed39cee844d2160d4fb9c4e6d9b7864331a97021dba
     name: dftfrontend
@@ -414,7 +424,7 @@ entries:
     version: 1.1.5
   - apiVersion: v2
     appVersion: 1.1.4
-    created: "2022-09-16T14:09:40.198769+05:30"
+    created: "2022-09-16T14:16:00.965033+05:30"
     description: A Helm chart for Kubernetes
     digest: 6dc514f5baff5553bd4021452dd760adeecc69889e906ded7ac545525d23100b
     name: dftfrontend
@@ -424,7 +434,7 @@ entries:
     version: 1.1.4
   - apiVersion: v2
     appVersion: 1.1.3
-    created: "2022-09-16T14:09:40.198425+05:30"
+    created: "2022-09-16T14:16:00.964675+05:30"
     description: A Helm chart for Kubernetes
     digest: e0cf0b60e5549f3ea3c41c840bb0c083df942aae3776631581859e1566b0581c
     name: dftfrontend
@@ -434,7 +444,7 @@ entries:
     version: 1.1.3
   - apiVersion: v2
     appVersion: 1.1.2
-    created: "2022-09-16T14:09:40.19807+05:30"
+    created: "2022-09-16T14:16:00.964329+05:30"
     description: A Helm chart for Kubernetes
     digest: 165bcef1d1ee02d2a97a9c53a25a74c812486ee43120661f022fab7c9e5c4a34
     name: dftfrontend
@@ -444,7 +454,7 @@ entries:
     version: 1.1.2
   - apiVersion: v2
     appVersion: 1.1.1
-    created: "2022-09-16T14:09:40.197703+05:30"
+    created: "2022-09-16T14:16:00.963911+05:30"
     description: A Helm chart for Kubernetes
     digest: 873dd1cb641c4ef81bf2005384baa79d6ab731b3f27292305a6e0420d2132579
     name: dftfrontend
@@ -454,7 +464,7 @@ entries:
     version: 1.1.1
   - apiVersion: v2
     appVersion: 1.1.0
-    created: "2022-09-16T14:09:40.197382+05:30"
+    created: "2022-09-16T14:16:00.963499+05:30"
     description: A Helm chart for Kubernetes
     digest: f8162fbd0821dceb52b5ba867427fd06413bf1358f00e5135681f858acd52277
     name: dftfrontend
@@ -464,7 +474,7 @@ entries:
     version: 1.1.0
   - apiVersion: v2
     appVersion: 1.0.9
-    created: "2022-09-16T14:09:40.196973+05:30"
+    created: "2022-09-16T14:16:00.963148+05:30"
     description: A Helm chart for Kubernetes
     digest: 9a84e329a904a14cf6f384de561b42ef0e19be4724d5c272e7afa1ae8146a469
     name: dftfrontend
@@ -474,7 +484,7 @@ entries:
     version: 1.0.9
   - apiVersion: v2
     appVersion: 1.0.8
-    created: "2022-09-16T14:09:40.196474+05:30"
+    created: "2022-09-16T14:16:00.962801+05:30"
     description: A Helm chart for Kubernetes
     digest: 691efba02976216f05ae11ba17aad6f51147748552f642cec9028b532b7fa33a
     name: dftfrontend
@@ -484,7 +494,7 @@ entries:
     version: 1.0.8
   - apiVersion: v2
     appVersion: 1.0.7
-    created: "2022-09-16T14:09:40.196133+05:30"
+    created: "2022-09-16T14:16:00.962403+05:30"
     description: A Helm chart for Kubernetes
     digest: c3f3dcff0a67d5e303f33b76ab160cd8afc149a1600aa4b0b0a89f0341f51040
     name: dftfrontend
@@ -494,7 +504,7 @@ entries:
     version: 1.0.7
   - apiVersion: v2
     appVersion: 1.0.6
-    created: "2022-09-16T14:09:40.195784+05:30"
+    created: "2022-09-16T14:16:00.961741+05:30"
     description: A Helm chart for Kubernetes
     digest: 6dc6df9103a7c54a18a76213503617e7bbc885eac926c2ecdabb8e89495f0e78
     name: dftfrontend
@@ -504,7 +514,7 @@ entries:
     version: 1.0.6
   - apiVersion: v2
     appVersion: 1.0.5
-    created: "2022-09-16T14:09:40.195439+05:30"
+    created: "2022-09-16T14:16:00.961373+05:30"
     description: A Helm chart for Kubernetes
     digest: f35d855287bf4ce208cd1b5f828f2282b39d02e433044728fcbc555e1abd9ae3
     name: dftfrontend
@@ -514,7 +524,7 @@ entries:
     version: 1.0.5
   - apiVersion: v2
     appVersion: 1.0.4
-    created: "2022-09-16T14:09:40.195077+05:30"
+    created: "2022-09-16T14:16:00.96105+05:30"
     description: A Helm chart for Kubernetes
     digest: b39f327e8b4b43a7c823737b7f8b77b6b040ce22e2c2540cde17b1dc8f89925b
     name: dftfrontend
@@ -524,7 +534,7 @@ entries:
     version: 1.0.4
   - apiVersion: v2
     appVersion: 1.0.3
-    created: "2022-09-16T14:09:40.194679+05:30"
+    created: "2022-09-16T14:16:00.96071+05:30"
     description: A Helm chart for Kubernetes
     digest: 46658a27ac03ab343a00603611710d3d384d728c34c3ca38f8cc97064f2302c8
     name: dftfrontend
@@ -534,7 +544,7 @@ entries:
     version: 1.0.3
   - apiVersion: v2
     appVersion: 1.0.2
-    created: "2022-09-16T14:09:40.194276+05:30"
+    created: "2022-09-16T14:16:00.960379+05:30"
     description: A Helm chart for Kubernetes
     digest: 75cda701be31de9c2cb988d1ac05b71e808bab5453463c966ebe0a171c854a43
     name: dftfrontend
@@ -544,7 +554,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-09-16T14:09:40.193868+05:30"
+    created: "2022-09-16T14:16:00.960059+05:30"
     description: A Helm chart for Kubernetes
     digest: dc20e94c6f7b28b621069bac071ed1316f35dbfe4da937efcf1512a022ae4c28
     name: dftfrontend
@@ -554,7 +564,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-09-16T14:09:40.19348+05:30"
+    created: "2022-09-16T14:16:00.959738+05:30"
     description: A Helm chart for Kubernetes
     digest: 21b5b988563c92398b88d70a86a85b28a53cf58a7ebc8cfe989ab7676c9cb472
     name: dftfrontend
@@ -565,7 +575,7 @@ entries:
   edc-controlplane:
   - apiVersion: v2
     appVersion: 0.0.6
-    created: "2022-09-16T14:09:40.206064+05:30"
+    created: "2022-09-16T14:16:00.971413+05:30"
     description: EDC Control-Plane - The Eclipse DataSpaceConnector administration
       layer with responsibility of resource management and govern contracts and data
       transfers
@@ -579,7 +589,7 @@ entries:
   edc-dataplane:
   - apiVersion: v2
     appVersion: 0.0.6
-    created: "2022-09-16T14:09:40.206887+05:30"
+    created: "2022-09-16T14:16:00.972182+05:30"
     description: EDC Data-Plane - The Eclipse DataSpaceConnector data layer with responsibility
       of transferring and receiving data streams
     digest: da013451b02622a82eab475f028b96ca0e047d2001efc9f45cadc98e07f3b1dc
@@ -592,7 +602,7 @@ entries:
   omejdn-server:
   - apiVersion: v2
     appVersion: 1.7.1
-    created: "2022-09-16T14:09:40.207323+05:30"
+    created: "2022-09-16T14:16:00.972569+05:30"
     description: DAPS server helm-chart
     digest: df03844a1a2070332243736400ccf0963666da6ebdaa71349eab83b5191becfe
     name: omejdn-server
@@ -600,4 +610,4 @@ entries:
     urls:
     - https://catenax.github.io/gds-productdft-helm/omejdn-server-1.0.1.tgz
     version: 1.0.1
-generated: "2022-09-16T14:09:40.161146+05:30"
+generated: "2022-09-16T14:16:00.944165+05:30"
