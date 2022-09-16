@@ -6,8 +6,9 @@
 {{- range .Values.ingresses }}
 {{- if and .enabled .endpoints }}
 {{- $ingressName := printf "%s-%s" $fullName .hostname }}
-{{- if .Values.serviceDomainName }}
 {{- $serviceDomainName := .Values.serviceDomainName }}
+{{- if $serviceDomainName }}
+{{- $serviceDomainName := $serviceDomainName }}
 {{- else }}
 {{- $serviceDomainName := .hostname }}
 {{- end }}
