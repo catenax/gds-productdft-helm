@@ -3,7 +3,7 @@
 {{- $gitVersion := .Capabilities.KubeVersion.GitVersion }}
 {{- $dftbackendEndpoints := .Values.dftbackend.endpoints }}
 {{- $namespace := .Release.Namespace }}
-{{- range .Values.ingress }}
+{{- range .Values.ingresses }}
 {{- if and .enabled .endpoints }}
 {{- $ingressName := printf "%s-%s" $fullName .hostname }}
 ---

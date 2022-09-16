@@ -65,7 +65,7 @@ ingress:
 
     tls: 
       enabled: true
-      secretName: "dft-secret-tls"
+   #   secretName: ""
       # -- If present overwrites the default secret name
     certManager:
       # -- If preset enables certificate generation via cert-manager namespace scoped issuer
