@@ -4,7 +4,7 @@ image:
   repository: ghcr.io/catenax/gds-product-dft/product-dft-frontend
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.1.5"
+  tag: "1.0.0"
   
 serviceAccount:
   # Specifies whether a service account should be created
@@ -50,8 +50,8 @@ dft:
 ingress:
   - enabled: true
     className: "nginx"
-    annotations: {}
-    # kubernetes.io/tls-acme: "true"
+    annotations: 
+     kubernetes.io/tls-acme: "true"
     hostname: ""
     endpoints:
      - default
@@ -59,7 +59,7 @@ ingress:
     tls: 
      enabled: true
 
-     #secretName: ""
+     secretName: ""
       # -- If present overwrites the default secret name
     certManager:
       # -- If preset enables certificate generation via cert-manager namespace scoped issuer
