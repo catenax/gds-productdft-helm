@@ -9,9 +9,3 @@ appVersion: "0.1.1"
 version: 0.1.1
 maintainers: []
 
-dependencies:
-  - condition: postgresql.enabled
-    name: postgresql
-    repository: https://charts.bitnami.com/bitnami
-    version: 11.x.x
-    
