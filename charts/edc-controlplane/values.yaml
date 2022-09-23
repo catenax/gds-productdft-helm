@@ -138,8 +138,7 @@ service:
 ## Ingress declaration to expose the network service.
 ingresses:
   ## Public / Internet facing Ingress
-  - enabled: true
-    # -- The hostname to be used to precisely map incoming traffic onto the underlying network service
+  - enabled: false    # -- The hostname to be used to precisely map incoming traffic onto the underlying network service
     hostname: "dft-connector.int.demo.catena-x.net"
     # -- Additional ingress annotations to add
     annotations: {}
