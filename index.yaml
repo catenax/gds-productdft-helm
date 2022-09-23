@@ -644,24 +644,6 @@ entries:
     version: 1.0.0
   edc-controlplane:
   - apiVersion: v2
-    appVersion: 0.1.1
-    created: "2022-09-23T18:15:22.416956+05:30"
-    dependencies:
-    - condition: postgresql.enabled
-      name: postgresql
-      repository: https://charts.bitnami.com/bitnami
-      version: 11.x.x
-    description: EDC Control-Plane - The Eclipse DataSpaceConnector administration
-      layer with responsibility of resource management and govern contracts and data
-      transfers
-    digest: 8d4b5466669f267181942cf841a39c00c52a9dce0c3a2d888ac9dc248a9da9ad
-    home: https://github.com/catenax-ng/product-edc/deployment/helm/edc-controlplane
-    name: edc-controlplane
-    type: application
-    urls:
-    - https://catenax.github.io/kubeapps-orchestrator-service/edc-controlplane-0.1.1.tgz
-    version: 0.1.1
-  - apiVersion: v2
     appVersion: 0.0.6
     created: "2022-09-23T18:15:22.407248+05:30"
     description: EDC Control-Plane - The Eclipse DataSpaceConnector administration
